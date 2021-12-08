@@ -1,8 +1,67 @@
 ---
 layout: default
-title: "Testitest!"
 ---
 
+<body class="bg-accent-dark bg-fixed bg-cover bg-paranal flex flex-col min-h-screen">
+<nav class="h-18 bg-gray-800 w-full p-2 text-white bg-opacity-90 flex justify-evenly text-bold font-bold font-display fixed z-50">
+        <div class="hover:bg-tblue-dark p-2 rounded-md">
+                <a href="./index.html" class="text-tblue-light">
+                        Home
+                </a>
+        </div>
+        <div class="hover:bg-tblue-dark p-2 rounded-md">
+                <a href="./research.html">
+                        Research
+                </a>
+        </div>
+        <div class="hover:bg-tblue-dark p-2 rounded-md">
+                <a href="./aboutme.html">
+                        About Me
+                </a>
+        </div>
+        <div class="hover:bg-tblue-dark p-2 rounded-md">
+                <a href="./outreach.html">
+                        Outreach
+                </a>
+        </div>
+        <div class="hover:bg-tblue-dark p-2 rounded-md">
+                <a href="./more.html">
+                        More
+                </a>
+        </div>
+</nav>
 
-<div class="text-green-500">TEST</div>
+<main class="flex-grow">
+        <div class="flex flex-col justify-center text-gray-800 bg-blue-200 p-4 bg-opacity-70 my-10 mt-20">
+                <div class="flex justify-center">
+                        <img class="w-28 h-auto my-auto justify-self-center" src="{{site.baseurl}}/assets/css/img/ontheinteractionofbinaries.svg" alt="Webpage Logo">
+                </div>
+                <div class="text-center pt-1">
+                        <p class="text-lg"> Julia Bodensteiner </p>
+                        <p class="text-sm"> ESO Fellow </p>
+                </div>
+        </div>
+
+        <div class="flex justify-center justify-items-center flex-col md:flex-row p-5">
+                <div class="md:w-1/5 flex justify-center pb-5 md:pb-0">
+                        <img class="shadow-xl w-36 h-auto my-auto border-2 border-gray-800 rounded-xl justify-self-center" src="{{site.baseurl}}/assets/css/img/DRX02295_mod2_small.JPG" alt="Close-up of Julia Bodensteiner's face">
+                </div>
+                <div class="md:w-4/5 flex flex-col max-w-3xl text-center text-gray-800 text-2xl bg-opacity-70 bg-blue-200 p-6 rounded-xl">
+                        <h2 class="pb-4">
+                                Welcome to my page!
+                        </h2>
+                        <p class="text-justify text-xl">
+                        I am Julia Bodensteiner, a professional and passionate astrophysical researcher. I recently defended my PhD at the Institute of Astronomy at KU Leuven, Belgium. Since October 2021, I am working as an ESO Fellow in the Headquarters in Garching by Munich, Germany.
+                        </p>
+                </div>
+        </div>
+</main>
+
+<footer class="h-14 md:h-8 text-xs bg-gray-800 bg-opacity-80 w-full grid grid-cols-1 grid-rows:3 md:grid-cols-3 md:grid-rows:1 justify-between text-white p-2">
+        <div class="text-left"> November 2021 </div>
+        <div class="text-left md:text-center"> © Julia Bodensteiner </div>
+        <div class="text-left md:text-right"> Background: José Francisco Salgado(josefrancisco.org)/ESO </div>
+</footer>
+
+</body>
 

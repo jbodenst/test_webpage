@@ -1,0 +1,120 @@
+---
+layout: default
+---
+
+<body class="bg-accent-dark bg-fixed bg-cover bg-paranal flex flex-col min-h-screen">
+<nav class="h-18 bg-gray-800 w-full p-2 text-white bg-opacity-90 flex justify-evenly text-bold font-bold font-display fixed z-50">
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./index.html">
+			Home
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./research.html">
+			Research
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./aboutme.html" class="text-tblue-light">
+			About Me
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./outreach.html">
+			Outreach
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./more.html">
+			More
+		</a>
+	</div>
+</nav>
+
+<main class="flex-grow">
+    <div class="flex flex-col justify-center text-gray-800 bg-blue-200 p-4 bg-opacity-70 my-10 mt-20">
+		<div class="flex justify-center">
+			<img class="w-28 h-auto my-auto justify-self-center" src="{{site.baseurl}}/assets/css/img/ontheinteractionofbinaries.svg" alt="Webpage Logo">
+		</div>
+		<div class="text-center pt-1">
+			<p class="text-lg"> Julia Bodensteiner </p>
+			<p class="text-sm"> ESO Fellow </p>
+		</div>
+	</div>
+
+	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-5">
+		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
+			About Me
+		</h2>
+		<p class="text-justify pb-2">
+            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:shadow-inner rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany. I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy. I am also interested in Be stars and especially in the origin of their rapid rotation in the context of previous binary interactions.
+        </p>
+        <p class="text-justify pb-2">
+            Having spent more than 60 nights at a telescope, I have developed a passion for observing, and I have gained experience working with high-resolution spectra (from <a href="http://www.mercator.iac.es/instruments/hermes/" class="text-tblue-dark hover:bg-pink-100 rounded-md">HERMES</a> at the Mercator telescope, and <a href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">FEROS</a> at the MPG/ESO 2.2-m telescope) as well as integral-field spectroscopy using <a href="https://www.eso.org/sci/facilities/paranal/instruments/muse/overview.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">VLT/MUSE</a>.
+        </p>
+        <p class="text-justify pb-2">
+            In my free time, I like to be out in the nature. I enjoy hiking, but given the lack of mountains in Belgium, where I lived for the last four years, I developed a passion for road biking as well. Additionally, I like photography and I am learning to make my own clothes (and face masks during Covid-times).
+        </p>
+
+        <a href="{{site.baseurl}}/assets/css/img/CV_Pub.pdf" download="CV_Bodensteiner.pdf" class="flex justify-center">
+        <button class="bg-transparent hover:bg-tblue-dark text-tblue-dark font-semibold hover:text-white py-2 px-4 border border-tblue-dark hover:border-transparent rounded">
+            Full CV
+        </button>
+        </a>
+	</div>
+
+    <div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-xl mb-5">
+        <h2 class="pb-4 text-left text-2xl font-semibold uppercase">
+			Education
+		</h2>
+        <div class="flex flex-col lg:flex-row justify-evenly gap-x-32">
+            <div class="mb-4">
+                <p class="text-justify text-2xl"> 2017 - 2021: PhD </p>
+                <p class="text-justify text-xl"> Institute of Astronomy, KU Leuven </p>
+                <p class="text-justify text-lg"> PhD thesis: <span class="italic">"Detection and characterization of massive binary interaction products"</span> </p>
+            </div>
+            <div class="mb-4">
+                <p class="text-justify text-2xl"> 2015 - 2017: MSc </p>
+                <p class="text-justify text-xl"> Technical University of Munich </p>
+                <p class="text-justify text-lg"> MSc thesis: <span class="italic">"Interaction between Massive Stars and the Interstellar Medium"</span> </p>
+            </div>
+            <div class="mb-4">
+                <p class="text-justify text-2xl"> 2011 - 2015: BSc </p>
+                <p class="text-justify text-xl"> Technical University of Munich </p>
+                <p class="text-justify text-lg"> Including one year ERASMUS at the Universidad Complutense in Madrid, Spain </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-10">
+		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
+			Observing Experience
+		</h2>
+        <div class="flex flex-col lg:flex-row justify-evenly gap-x-16">
+            <div class="mb-4">
+                <p class="text-justify"> MPG/ESO 2.2m-telescope, La Silla, Chile </p>
+                <p class="text-justify text-xl"> Observations with FEROS and GROND </p>
+                <p class="text-justify text-lg"> - 10 nights in 2015 </p>
+                <p class="text-justify text-lg"> - 11 nights in 2016 </p>
+            </div>
+            <div>
+                <p class="text-justify"> Mercator telescope, La Palma, Spain </p>
+                <p class="text-justify text-xl"> Observations with HERMES and MAIA </p>
+                <p class="text-justify text-lg"> - 10 nights in 2018 </p>
+                <p class="text-justify text-lg"> - 20 nights in 2019 </p>
+                <p class="text-justify text-lg"> - 10 nights in 2020 (remote, due to Covid-19) </p>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+
+<footer class="h-14 md:h-8 text-xs bg-gray-800 bg-opacity-80 w-full grid grid-cols-1 grid-rows:3 md:grid-cols-3 md:grid-rows:1 justify-between text-white p-2">
+	<div class="text-left"> November 2021 </div>
+	<div class="text-left md:text-center"> © Julia Bodensteiner </div>
+	<div class="text-left md:text-right"> Background: José Francisco Salgado(josefrancisco.org)/ESO </div>
+</footer>
+
+</body>
