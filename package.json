@@ -4,7 +4,7 @@
   "description": "test for my webpage",
   "main": "index.js",
   "scripts": {
-    "build": "tailwind build -i ./node_modules/tailwindcss/tailwind.css -o ./assets/css/style.css",
+    "build": "tailwind build -i ./node_modules/tailwindcss/tailwind.css -o ./assets/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
