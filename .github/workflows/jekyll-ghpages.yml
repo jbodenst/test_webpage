@@ -11,7 +11,7 @@ jobs:
 
      steps:
      - uses: actions/checkout@v2
-     - name: Install Dependencies
+     - name: Install Dependencies2
        run: npm install
        
      - name: Build the site in the jekyll/builder container
