@@ -14,7 +14,7 @@ jobs:
      - name: Install Dependencies
        run: npm install
        
-     - name: Build the site in the jekyll/builder container (again)
+     - name: Build the site in the jekyll/builder container
        run: |
          docker run \
          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
