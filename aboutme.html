@@ -32,28 +32,20 @@ layout: default
 </nav>
 
 <main class="flex-grow">
-    <div class="flex flex-col justify-center text-gray-800 bg-blue-200 p-4 bg-opacity-70 my-10 mt-20">
-		<div class="flex justify-center">
-			<img class="w-28 h-auto my-auto justify-self-center" src="{{site.baseurl}}/assets/css/img/ontheinteractionofbinaries.svg" alt="Webpage Logo">
-		</div>
-		<div class="text-center pt-1">
-			<p class="text-lg"> Julia Bodensteiner </p>
-			<p class="text-sm"> ESO Fellow </p>
-		</div>
-	</div>
+    {% include banner.html %}
 
 	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-5">
 		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
 			About Me
 		</h2>
 		<p class="text-justify pb-2">
-            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:shadow-inner rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany. I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy. I am also interested in Be stars and especially in the origin of their rapid rotation in the context of previous binary interactions.
+            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany. I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy. I am also interested in Be stars and especially in the origin of their rapid rotation in the context of previous binary interactions.
         </p>
         <p class="text-justify pb-2">
-            Having spent more than 60 nights at a telescope, I have developed a passion for observing, and I have gained experience working with high-resolution spectra (from <a href="http://www.mercator.iac.es/instruments/hermes/" class="text-tblue-dark hover:bg-pink-100 rounded-md">HERMES</a> at the Mercator telescope, and <a href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">FEROS</a> at the MPG/ESO 2.2-m telescope) as well as integral-field spectroscopy using <a href="https://www.eso.org/sci/facilities/paranal/instruments/muse/overview.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">VLT/MUSE</a>.
+            Having spent more than 60 nights at a telescope, I have developed a passion for observing, and I have gained experience working with high-resolution spectra (from <a href="http://www.mercator.iac.es/instruments/hermes/" class="text-tblue-dark hover:bg-pink-100 rounded-md">HERMES</a> at the Mercator telescope, and <a href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">FEROS</a> at the MPG/ESO 2.2-m telescope) as well as integral-field spectroscopy using <a href="https://www.eso.org/sci/facilities/paranal/instruments/muse/overview.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">VLT/MUSE</a>. This was one of the reasons why I chose to work on SoXS, a new state-of-the-art spectrograph for the ESO-NTT, as my ESO duty work.
         </p>
         <p class="text-justify pb-2">
-            In my free time, I like to be out in the nature. I enjoy hiking, but given the lack of mountains in Belgium, where I lived for the last four years, I developed a passion for road biking as well. Additionally, I like photography and I am learning to make my own clothes (and face masks during Covid-times).
+            In my free time, I like to be out in the nature. I enjoy hiking, but given the lack of mountains in Belgium, where I lived for four years, I developed a passion for road biking as well. Additionally, I like photography and I am learning to make my own clothes (and face masks during Covid-times).
         </p>
 
         <a href="{{site.baseurl}}/assets/css/img/CV_Pub.pdf" download="CV_Bodensteiner.pdf" class="flex justify-center">
@@ -90,22 +82,22 @@ layout: default
 		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
 			Observing Experience
 		</h2>
-        <div class="flex flex-col lg:flex-row justify-evenly gap-x-16">
+        <div class="flex flex-col lg:flex-row justify-evenly gap-x-10">
             <div class="mb-4">
-                <p class="text-justify"> MPG/ESO 2.2m-telescope, La Silla, Chile </p>
+                <p class="text-justify"> <a href="https://www.eso.org/public/teles-instr/lasilla/mpg22/" class="text-tblue-dark hover:bg-pink-100 rounded-md">MPG/ESO 2.2m-telescope</a>, La Silla, Chile </p>
                 <p class="text-justify text-xl"> Observations with FEROS and GROND </p>
-		<ul class="list-disc">
+		<ul class="list-disc list-outside pl-8">
                      <li> 10 nights in 2015 </li>
                      <li> 11 nights in 2016 </li>
-                </ul>
+        </ul>
             </div>
             <div>
-                <p class="text-justify"> Mercator telescope, La Palma, Spain </p>
+                <p class="text-justify"> <a href="http://www.mercator.iac.es/" class="text-tblue-dark hover:bg-pink-100 rounded-md">Mercator telescope</a>, La Palma, Spain </p>
                 <p class="text-justify text-xl"> Observations with HERMES and MAIA </p>
-		<ul class="list-disc">	
+		<ul class="list-disc list-outside pl-8">
                       <li> 10 nights in 2018 </li>
                       <li> 20 nights in 2019 </li>
-                      <li> 10 nights in 2020 (remote, due to Covid-19) </li>
+                      <li> 10 nights in 2020 (remotely) </li>
 		</ul>
             </div>
 
@@ -115,10 +107,7 @@ layout: default
 
 </main>
 
-<footer class="h-14 md:h-8 text-xs bg-gray-800 bg-opacity-80 w-full grid grid-cols-1 grid-rows:3 md:grid-cols-3 md:grid-rows:1 justify-between text-white p-2">
-	<div class="text-left"> November 2021 </div>
-	<div class="text-left md:text-center"> © Julia Bodensteiner </div>
-	<div class="text-left md:text-right"> Background: José Francisco Salgado(josefrancisco.org)/ESO </div>
-</footer>
+
+{% include footer.html %}
 
 </body>

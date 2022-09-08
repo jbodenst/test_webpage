@@ -32,13 +32,19 @@ layout: default
 </nav>
 
 <main class="flex-grow">
-	<div class="flex flex-col justify-center text-gray-800 bg-blue-200 p-4 bg-opacity-70 my-10 mt-20">
-		<div class="flex justify-center">
-			<img class="w-28 h-auto my-auto justify-self-center" src="{{site.baseurl}}/assets/css/img/ontheinteractionofbinaries.svg" alt="Webpage Logo">
-		</div>
-		<div class="text-center pt-1">
-			<p class="text-lg"> Julia Bodensteiner </p>
-			<p class="text-sm"> ESO Fellow </p>
+	{% include banner.html %}
+
+	<div class="flex flex-col justify-items-center mx-auto max-w-prose text-xl py-5 text-gray-800 bg-opacity-70 bg-blue-200 p-5 rounded-xl mb-5">
+		<div class="flex flex-col">
+			<h2 class="pb-4 text-2xl text-left font-semibold uppercase">
+				Springer Thesis
+			</h2>
+			<p class="text-justify pb-2"> In Summer 2022, my PhD thesis was selected to be published as part of the
+				<a href="https://www.youtube.com/watch?v=6xfv-iYYufY&t=1s" class="text-tblue-dark hover:bg-pink-100 rounded-md">'Springer theses'</a>, a book thesis to recognize outstanding PhD research.
+				This monograph, entitled "Observational imprints of binary evolution on B- and Be-star populations" summarizes the main findings of my PhD, in which I used observations,
+				mainly optical spectroscopy, to detect and characterize products of binary interactions. Apart from studying the possible binary origin of classical Be stars, I investigated one particular Be binary HR 6819.
+				I further used MUSE integral-field spectroscopy to investigate the massive star population in the young SMC cluster NGC 330.
+			</p>
 		</div>
 	</div>
 
@@ -51,22 +57,46 @@ layout: default
         </div>
         <div class="flex flex-col md:flex-row">
             <div class="flex flex-col md:w-1/2">
-                <p class="text-justify pb-2"> In spring 2019, I gave a talk in a bar in the context of the world-wide science festival Pint of Science. Since the start of the Covid-19 pandemics, we had to come up with new ideas to reach the public. One of these is Couch of Science, an online version bringing Pint of Science to everyone's homes. Together with two colleagues, I joined an online discussion about one of our recent publications. </p>
+                <p class="text-justify pb-2"> In spring 2019, I gave a talk in a bar in the context of the world-wide science festival <a href="https://pintofscience.com/" class="text-tblue-dark hover:bg-pink-100 rounded-md">Pint of Science</a>.
+					Since the start of the Covid-19 pandemics, we had to come up with new ideas to reach the public.
+					One of these is Couch of Science, an online version bringing Pint of Science to everyone's homes.
+					Together with two colleagues, I joined an <a href="https://www.youtube.com/watch?v=6xfv-iYYufY&t=1s" class="text-tblue-dark hover:bg-pink-100 rounded-md">online discussion</a> about one of our recent publications. </p>
             </div>
             <div class="md:w-1/2 flex justify-center px-2 px-5 pb-5 md:pb-0">
     			<img class="shadow-xl w-max h-auto my-auto border-2 border-gray-800 rounded-md justify-self-center" src="{{site.baseurl}}/assets/css/img/CouchOfScience.png" alt="Screenshot of our Couch Of Science Online Session about Black Holes">
     		</div>
         </div>
-		<p class="text-justify pb-2"> Another outreach platform I am actively participating is the Skype a Scientist initiative, which virtually connects scientists with teachers and classrooms all over the world. In the past few months, I talked to 5 different classrooms in 3 different continents. </p>
+		<p class="text-justify pb-2"> Another outreach platform I am actively participating is the <a href="https://www.skypeascientist.com/" class="text-tblue-dark hover:bg-pink-100 rounded-md">Skype a Scientist</a> initiative, which virtually connects scientists with teachers and classrooms all over the world. In the past few months, I talked to 5 different classrooms in 3 different continents. </p>
+	</div>
+
+	<div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-2xl mb-5">
+		<h2 class="pb-4 text-left font-semibold uppercase">
+			Press coverage
+		</h2>
+		<div class="flex flex-col md:flex-row text-xl justify-evenly gap-x-16">
+			<div class="w-2/6">
+				<p class="text-justify font-semibold text-tblue-dark"> "'Black hole police' discover a dormant black hole outside our galaxy" </p>
+				<p class="text-justify text-xl"> Click <a href="https://www.eso.org/public/news/eso2210/" class="text-tblue-dark hover:bg-pink-100 rounded-md"> here</a> to read our ESO press release about the recently detected quiescent black-hole binary VFTS 243. </p>
+			</div>
+			<div class="w-2/6">
+				<p class="text-justify font-semibold text-tblue-dark"> "'Closest black hole' system found to contain no black hole"</p>
+				<p class="text-justify text-xl"> Click <a href="https://www.eso.org/public/news/eso2204/" class="text-tblue-dark hover:bg-pink-100 rounded-md"> here</a> to read our ESO press release on the new GRAVITY and MUSE observations of HR 6819, and
+					<a href="https://www.eso.org/public/videos/eso2204a/" class="text-tblue-dark hover:bg-pink-100 rounded-md">here</a> to watch the corresponding ESOcast, where we discuss our recent findings and the scientific method that lead to them.
+				</p>
+			</div>
+			<div class="w-2/6">
+				<p class="text-justify font-semibold text-tblue-dark"> "Closest black hole turns out to not be a black hole after all" </p>
+				<p class="text-justify text-xl"> Click
+					<a href="https://fys.kuleuven.be/ster/news/2020/closest-black-hole-turns-out-to-not-be-a-black-hole-after-all" class="text-tblue-dark hover:bg-pink-100 rounded-md">here </a> to read our KU Leuven press release
+					on our new interpretation of the spectroscopic data available for HR 6819. </p>
+			</div>
+
+		</div>
 	</div>
 
 
 </main>
 
-<footer class="h-14 md:h-8 text-xs bg-gray-800 bg-opacity-80 w-full grid grid-cols-1 grid-rows:3 md:grid-cols-3 md:grid-rows:1 justify-between text-white p-2">
-	<div class="text-left"> November 2021 </div>
-	<div class="text-left md:text-center"> © Julia Bodensteiner </div>
-	<div class="text-left md:text-right"> Background: José Francisco Salgado(josefrancisco.org)/ESO </div>
-</footer>
+{% include footer.html %}
 
 </body>
