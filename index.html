@@ -1,35 +1,10 @@
 ---
 layout: default
+title: Home
 ---
 
 <body class="bg-accent-dark bg-fixed bg-cover bg-paranal flex flex-col min-h-screen">
-<nav class="h-18 bg-gray-800 w-full p-2 text-white bg-opacity-90 flex justify-evenly text-bold font-bold font-display fixed z-50">
-        <div class="hover:bg-tblue-dark p-2 rounded-md">
-                <a href="./index.html" class="text-tblue-light">
-                        Home
-                </a>
-        </div>
-        <div class="hover:bg-tblue-dark p-2 rounded-md">
-                <a href="./research.html">
-                        Research
-                </a>
-        </div>
-        <div class="hover:bg-tblue-dark p-2 rounded-md">
-                <a href="./aboutme.html">
-                        About Me
-                </a>
-        </div>
-        <div class="hover:bg-tblue-dark p-2 rounded-md">
-                <a href="./outreach.html">
-                        Outreach
-                </a>
-        </div>
-        <div class="hover:bg-tblue-dark p-2 rounded-md">
-                <a href="./more.html">
-                        More
-                </a>
-        </div>
-</nav>
+    {% include nav.html color_home="text-tblue-light" %}
 
 <main class="flex-grow">
         {% include banner.html %}
@@ -42,8 +17,10 @@ layout: default
                         <h2 class="pb-4">
                                 Welcome to my page!
                         </h2>
-                        <p class="text-justify text-xl">
-                        I am Julia Bodensteiner, a professional and passionate astrophysical researcher. I recently defended my PhD at the Institute of Astronomy at KU Leuven, Belgium. Since October 2021, I am working as an ESO Fellow in the Headquarters in Garching by Munich, Germany.
+                        <p class="text-justify text-xl leading-tight">
+                        I am Julia Bodensteiner, a professional astrophysical researcher.
+                        I am currently working as an ESO Fellow in Garching by Munich, Germany.
+                        My work mainly focuses on the observational characterization of massive stars, in particular of stars in binary systems, and binary interaction products.
                         </p>
                 </div>
         </div>

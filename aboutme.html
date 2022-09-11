@@ -1,35 +1,10 @@
 ---
 layout: default
+title: About Me
 ---
 
 <body class="bg-accent-dark bg-fixed bg-cover bg-paranal flex flex-col min-h-screen">
-<nav class="h-18 bg-gray-800 w-full p-2 text-white bg-opacity-90 flex justify-evenly text-bold font-bold font-display fixed z-50">
-	<div class="hover:bg-tblue-dark p-2 rounded-md">
-		<a href="./index.html">
-			Home
-		</a>
-	</div>
-	<div class="hover:bg-tblue-dark p-2 rounded-md">
-		<a href="./research.html">
-			Research
-		</a>
-	</div>
-	<div class="hover:bg-tblue-dark p-2 rounded-md">
-		<a href="./aboutme.html" class="text-tblue-light">
-			About Me
-		</a>
-	</div>
-	<div class="hover:bg-tblue-dark p-2 rounded-md">
-		<a href="./outreach.html">
-			Outreach
-		</a>
-	</div>
-	<div class="hover:bg-tblue-dark p-2 rounded-md">
-		<a href="./more.html">
-			More
-		</a>
-	</div>
-</nav>
+	{% include nav.html color_aboutme="text-tblue-light" %}
 
 <main class="flex-grow">
     {% include banner.html %}
@@ -38,14 +13,15 @@ layout: default
 		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
 			About Me
 		</h2>
-		<p class="text-justify pb-2">
-            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany. I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy. I am also interested in Be stars and especially in the origin of their rapid rotation in the context of previous binary interactions.
+		<p class="text-justify pb-2 leading-tight">
+            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany.
+			I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy.
+			I am also interested in classical Be stars, especially in the origin of their rapid rotation in the context of previous binary interactions.
         </p>
-        <p class="text-justify pb-2">
-            Having spent more than 60 nights at a telescope, I have developed a passion for observing, and I have gained experience working with high-resolution spectra (from <a href="http://www.mercator.iac.es/instruments/hermes/" class="text-tblue-dark hover:bg-pink-100 rounded-md">HERMES</a> at the Mercator telescope, and <a href="https://www.eso.org/sci/facilities/lasilla/instruments/feros.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">FEROS</a> at the MPG/ESO 2.2-m telescope) as well as integral-field spectroscopy using <a href="https://www.eso.org/sci/facilities/paranal/instruments/muse/overview.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">VLT/MUSE</a>. This was one of the reasons why I chose to work on SoXS, a new state-of-the-art spectrograph for the ESO-NTT, as my ESO duty work.
-        </p>
-        <p class="text-justify pb-2">
-            In my free time, I like to be out in the nature. I enjoy hiking, but given the lack of mountains in Belgium, where I lived for four years, I developed a passion for road biking as well. Additionally, I like photography and I am learning to make my own clothes (and face masks during Covid-times).
+        <p class="text-justify pb-2 leading-tight">
+            In my free time, I like to be out in the nature.
+			I enjoy hiking, but given the lack of mountains in Belgium, where I lived for four years, I developed a passion for road biking as well.
+			Additionally, I like photography and I am making my own clothes (and face masks during Covid-times).
         </p>
 
         <a href="{{site.baseurl}}/assets/css/img/CV_Pub.pdf" download="CV_Bodensteiner.pdf" class="flex justify-center">
@@ -61,50 +37,25 @@ layout: default
 		</h2>
         <div class="flex flex-col lg:flex-row justify-evenly gap-x-32">
             <div class="mb-4">
-                <p class="text-justify text-2xl"> 2017 - 2021: PhD </p>
-                <p class="text-justify text-xl"> Institute of Astronomy, KU Leuven </p>
-                <p class="text-justify text-lg"> PhD thesis: <span class="italic">"Detection and characterization of massive binary interaction products"</span> </p>
+				<p class="text-justify font-bold text-2xl">Bachelor of Science </p>
+				<p class="text-justify text-lg"> 2011 - 2015 </p>
+				<p class="text-justify font-semibold text-xl"> Technical University of Munich </p>
+				<p class="text-justify text-lg leading-tight"> Including one year ERASMUS at the Universidad Complutense in Madrid, Spain </p>
             </div>
             <div class="mb-4">
-                <p class="text-justify text-2xl"> 2015 - 2017: MSc </p>
-                <p class="text-justify text-xl"> Technical University of Munich </p>
-                <p class="text-justify text-lg"> MSc thesis: <span class="italic">"Interaction between Massive Stars and the Interstellar Medium"</span> </p>
+                <p class="text-justify font-bold text-2xl">Master of Science </p>
+				<p class="text-justify text-lg"> 2015 - 2017 </p>
+                <p class="text-justify font-semibold text-xl"> Technical University of Munich </p>
+                <p class="text-justify text-lg leading-tight"> MSc thesis: <span class="italic">"Interaction between Massive Stars and the Interstellar Medium"</span> </p>
             </div>
             <div class="mb-4">
-                <p class="text-justify text-2xl"> 2011 - 2015: BSc </p>
-                <p class="text-justify text-xl"> Technical University of Munich </p>
-                <p class="text-justify text-lg"> Including one year ERASMUS at the Universidad Complutense in Madrid, Spain </p>
+				<p class="text-justify font-bold text-2xl"> PhD </p>
+				<p class="text-justify text-lg"> 2017 - 2021 </p>
+				<p class="text-justify font-semibold text-xl"> Institute of Astronomy, KU Leuven </p>
+				<p class="text-justify text-lg leading-tight"> PhD thesis: <span class="italic">"Detection and characterization of massive binary interaction products"</span> </p>
             </div>
         </div>
     </div>
-
-    <div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-10">
-		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
-			Observing Experience
-		</h2>
-        <div class="flex flex-col lg:flex-row justify-evenly gap-x-10">
-            <div class="mb-4">
-                <p class="text-justify"> <a href="https://www.eso.org/public/teles-instr/lasilla/mpg22/" class="text-tblue-dark hover:bg-pink-100 rounded-md">MPG/ESO 2.2m-telescope</a>, La Silla, Chile </p>
-                <p class="text-justify text-xl"> Observations with FEROS and GROND </p>
-		<ul class="list-disc list-outside pl-8">
-                     <li> 10 nights in 2015 </li>
-                     <li> 11 nights in 2016 </li>
-        </ul>
-            </div>
-            <div>
-                <p class="text-justify"> <a href="http://www.mercator.iac.es/" class="text-tblue-dark hover:bg-pink-100 rounded-md">Mercator telescope</a>, La Palma, Spain </p>
-                <p class="text-justify text-xl"> Observations with HERMES and MAIA </p>
-		<ul class="list-disc list-outside pl-8">
-                      <li> 10 nights in 2018 </li>
-                      <li> 20 nights in 2019 </li>
-                      <li> 10 nights in 2020 (remotely) </li>
-		</ul>
-            </div>
-
-        </div>
-    </div>
-
-
 </main>
 
 

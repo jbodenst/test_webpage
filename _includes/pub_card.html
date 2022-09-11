@@ -1,4 +1,12 @@
-<a href="{{ include.url }}" target="_blank" class="w-80 flex flex-col justify-between flex-none bg-gray-100 shadow-xl rounded-xl mb-6 text-center gap-y-5 p-5">
-    <p class="italic">{{ include.title }}</p>
-    <p>{{ include.ref }}</p>
+<a href="{{ include.url }}" target="_blank" class="w-80 flex flex-col justify-between flex-none bg-gray-100 shadow-xl rounded-xl text-center px-5">
+    <div class="flex flex-col">
+        <p class="italic pt-5">{{ include.title }}</p>
+        <p class="italic mb-6">{{ include.subtitle }}</p>
+    </div>
+    <div class="flex flex-col">
+    	<p>{{ include.author }}</p>
+    	<p class="text-lg pb-5">
+            <span class="italic">{{ include.journal }}</span> {{ include.ref }}
+        </p>
+    </div>
 </a>
