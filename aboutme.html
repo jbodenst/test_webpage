@@ -9,20 +9,32 @@ title: About Me
 <main class="flex-grow">
     {% include banner.html %}
 
-	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-5">
+	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-20">
 		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
 			About Me
 		</h2>
 		<p class="text-justify pb-2 leading-tight">
-            I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany.
-			I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy.
-			I am also interested in classical Be stars, especially in the origin of their rapid rotation in the context of previous binary interactions.
+            <!-- I am a research fellow at the <a href="https://www.eso.org/sci/activities/garching.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">European Southern Observatory (ESO)</a> in Garching by Munich, Germany. -->
+			<!-- I am working on the observations of massive stars in young stellar clusters, searching for binary interactions products using optical spectroscopy. -->
+			<!-- I am also interested in classical Be stars, especially in the origin of their rapid rotation in the context of previous binary interactions. -->
+			I was born in Munich, lived in Spain and Belgium for a while, and now I am back in my hometown.
+			One of the things I enjoy the most about my job is the international environment, the different cultures, places and languages I am exposed to.
         </p>
-        <p class="text-justify pb-2 leading-tight">
-            In my free time, I like to be out in the nature.
-			I enjoy hiking, but given the lack of mountains in Belgium, where I lived for four years, I developed a passion for road biking as well.
-			Additionally, I like photography and I am making my own clothes (and face masks during Covid-times).
-        </p>
+		<div class="flex flex-col md:flex-row gap-y-4 gap-x-4">
+			<div class="flex md:w-4/12 justify-center md:justify-end pb-5 md:pb-0">
+				<img class="shadow-xl w-auto h-auto my-auto border-2 border-gray-800 rounded-md justify-self-center" src="{{site.baseurl}}/assets/css/img/IMG-20220210-WA0005.jpg" alt="Picture of Julia hiking in the mountains">
+			</div>
+			<div class="flex flex-col md:w-8/12">
+				<p class="text-justify pb-2 leading-tight">
+					In my free time, I like to be out in the nature.
+					I really enjoy hiking, and I am making the most of the short distance between Munich and the Alps.
+					Given the lack of mountains in Belgium, where I lived for four years, I developed a passion for road biking as well.
+					I also like photography and I am making my own clothes (and face masks during Covid-times).
+				</p>
+			</div>
+		</div>
+
+
 
         <a href="{{site.baseurl}}/assets/css/img/CV_Pub.pdf" download="CV_Bodensteiner.pdf" class="flex justify-center">
         <button class="bg-transparent hover:bg-tblue-dark text-tblue-dark font-semibold hover:text-white py-2 px-4 border border-tblue-dark hover:border-transparent rounded">
@@ -31,28 +43,28 @@ title: About Me
         </a>
 	</div>
 
-    <div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-xl mb-5">
+    <div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-xl mb-20">
         <h2 class="pb-4 text-left text-2xl font-semibold uppercase">
 			Education
 		</h2>
         <div class="flex flex-col lg:flex-row justify-evenly gap-x-32">
-            <div class="mb-4">
-				<p class="text-justify font-bold text-2xl">Bachelor of Science </p>
-				<p class="text-justify text-lg"> 2011 - 2015 </p>
-				<p class="text-justify font-semibold text-xl"> Technical University of Munich </p>
-				<p class="text-justify text-lg leading-tight"> Including one year ERASMUS at the Universidad Complutense in Madrid, Spain </p>
+			<div class="mb-4">
+				<p class="text-justify font-bold text-2xl"> PhD </p>
+				<p class="text-justify text-lg"> 2017 - 2021 </p>
+				<p class="text-justify font-semibold text-xl"> Institute of Astronomy, KU Leuven </p>
+				<p class="text-justify text-lg leading-tight"> PhD thesis: <span class="italic">"Detection and characterization of massive binary interaction products"</span> </p>
             </div>
-            <div class="mb-4">
+			<div class="mb-4">
                 <p class="text-justify font-bold text-2xl">Master of Science </p>
 				<p class="text-justify text-lg"> 2015 - 2017 </p>
                 <p class="text-justify font-semibold text-xl"> Technical University of Munich </p>
                 <p class="text-justify text-lg leading-tight"> MSc thesis: <span class="italic">"Interaction between Massive Stars and the Interstellar Medium"</span> </p>
             </div>
-            <div class="mb-4">
-				<p class="text-justify font-bold text-2xl"> PhD </p>
-				<p class="text-justify text-lg"> 2017 - 2021 </p>
-				<p class="text-justify font-semibold text-xl"> Institute of Astronomy, KU Leuven </p>
-				<p class="text-justify text-lg leading-tight"> PhD thesis: <span class="italic">"Detection and characterization of massive binary interaction products"</span> </p>
+			<div class="mb-4">
+				<p class="text-justify font-bold text-2xl">Bachelor of Science </p>
+				<p class="text-justify text-lg"> 2011 - 2015 </p>
+				<p class="text-justify font-semibold text-xl"> Technical University of Munich </p>
+				<p class="text-justify text-lg leading-tight"> Including one year ERASMUS at the Universidad Complutense in Madrid, Spain </p>
             </div>
         </div>
     </div>

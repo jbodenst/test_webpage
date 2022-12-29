@@ -7,23 +7,81 @@ title: Home
     {% include nav.html color_home="text-tblue-light" %}
 
 <main class="flex-grow">
-        {% include banner.html %}
+    {% include banner.html %}
 
-        <div class="flex justify-center justify-items-center flex-col md:flex-row p-5">
-                <div class="md:w-1/5 flex justify-center pb-5 md:pb-0">
-                        <img class="shadow-xl w-36 h-auto my-auto border-2 border-gray-800 rounded-xl justify-self-center" src="{{site.baseurl}}/assets/css/img/DRX02295_mod2_small.JPG" alt="Close-up of Julia Bodensteiner's face">
-                </div>
-                <div class="md:w-4/5 flex flex-col max-w-3xl text-center text-gray-800 text-2xl bg-opacity-70 bg-blue-200 p-6 rounded-xl">
-                        <h2 class="pb-4">
-                                Welcome to my page!
-                        </h2>
-                        <p class="text-justify text-xl leading-tight">
-                        I am Julia Bodensteiner, a professional astrophysical researcher.
-                        I am currently working as an ESO Fellow in Garching by Munich, Germany.
-                        My work mainly focuses on the observational characterization of massive stars, in particular of stars in binary systems, and binary interaction products.
-                        </p>
-                </div>
-        </div>
+    <div class="flex justify-center justify-items-center flex-col md:flex-row p-5 pb-20">
+            <div class="md:w-1/6 flex justify-center md:justify-start pb-5 md:pb-0">
+                    <img class="shadow-xl w-36 h-auto my-auto border-2 border-gray-800 rounded-xl justify-self-center" src="{{site.baseurl}}/assets/css/img/DRX02295_mod2_small.JPG" alt="Close-up of Julia Bodensteiner's face">
+            </div>
+            <div class="md:w-5/6 flex flex-col max-w-3xl text-center text-gray-800 text-2xl bg-opacity-70 bg-blue-200 p-6 rounded-xl">
+                    <h2 class="pb-4">
+                            Welcome to my page!
+                    </h2>
+                    <p class="text-justify text-xl leading-tight">
+                    I am Julia Bodensteiner, a professional astrophysical researcher.
+                    I am currently working as a Research Fellow at the European Southern Observatory (ESO) in Garching by Munich, Germany.
+                    My work mainly focuses on the observational characterization of massive stars, in particular of stars in binary systems, binary interaction products and classical Be stars.
+                    </p>
+            </div>
+    </div>
+
+    <div class="overflow-x-auto bg-white bg-opacity-80 text-gray-800 text-xl px-5 py-4 flex flex-col mb-20 justify-items-center">
+		<span class="px-10 text-2xl text-left font-semibold uppercase pb-4">
+			Main publications:
+		</span>
+	 <div class="flex justify-center">
+		  <div class="gap-x-6 flex flex-row border-2 border-dotted border-tblue-medium rounded-xl overflow-x-scroll md:w-8/12 p-8 pb-6 snap-x snap-mandatory">
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2018A%26A...618A.110B/abstract"
+			   title="The young massive SMC cluster NGC 330 seen by MUSE"
+			   subtitle="III. Stellar parameters and rotational velocities"
+			   author="Bodensteiner et al. 2022"
+			   journal="in prep. "
+			   ref=""%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2022Msngr.186....3B/abstract"
+			   title="Detecting Stripped Stars While Searching for Quiescent Black Holes"
+			   subtitle=""
+			   author="Bodensteiner, Heida et al. 2022"
+			   journal="The Messenger "
+			   ref="186 3"%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2018A%26A...618A.110B/abstract"
+			   title="The young massive SMC cluster NGC 330 seen by MUSE"
+			   subtitle="II. Multiplicity properties of the massive-star population"
+			   author="Bodensteiner et al. 2021"
+			   journal="A&A "
+			   ref="652 70"%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..43B/abstract"
+			   title="Is HR 6819 a triple system containing a black hole?"
+			   subtitle="An alternative explanation"
+			   author="Bodensteiner et al. 2020"
+			   journal="A&A "
+			   ref="641 43"%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..42B/abstract"
+			   title=" Investigating the lack of main-sequence companions to massive Be stars"
+			   subtitle=""
+			   author="Bodensteiner et al. 2020"
+			   journal="A&A"
+			   ref="641 42"%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2020A%26A...634A..51B/abstract"
+			   title="The young massive SMC cluster NGC 330 seen by MUSE"
+			   subtitle="I. Observations and stellar content"
+			   author="Bodensteiner et al. 2020"
+			   journal="A&A "
+			   ref="634 51"%}
+
+			  {% include pub_card.html url="https://ui.adsabs.harvard.edu/abs/2018A%26A...618A.110B/abstract"
+			   title="Infrared nebulae around bright massive stars as indicators for binary interactions"
+			   subtitle=""
+			   author="Bodensteiner et al. 2018"
+			   journal="A&A "
+			   ref="618 110"%}
+		  </div>
+	  </div>
+   </div>
 </main>
 
 {% include footer.html %}
