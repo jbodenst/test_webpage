@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Research - Julia Bodensteiner | Astronomer</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+
+    <!-- for the favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/css/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/css/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/css/favicon-16x16.png">
+    <link rel="manifest" href="/assets/css/site.webmanifest">
+    <link rel="mask-icon" href="/assets/css/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+    <body class="bg-accent-dark bg-fixed bg-cover bg-paranal flex flex-col min-h-screen">
+	<nav class="h-18 bg-gray-800 w-full p-2 text-white bg-opacity-90 flex justify-evenly text-bold font-bold font-display fixed z-50">
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./index.html" class=>
+			Home
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./research.html" class=text-tblue-light>
+			Research
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./aboutme.html" class=>
+			About Me
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./outreach.html" class=>
+			Outreach
+		</a>
+	</div>
+	<div class="hover:bg-tblue-dark p-2 rounded-md">
+		<a href="./more.html" class=>
+			More
+		</a>
+	</div>
+</nav>
+
+
+<main class="flex-grow">
+    <div class="flex flex-col justify-center text-gray-800 bg-blue-200 p-4 bg-opacity-70 my-10 mb-20 mt-20">
+	<div class="flex justify-center">
+		<img class="w-28 h-auto my-auto justify-self-center" src="/assets/css/img/ontheinteractionofbinaries.svg" alt="Webpage Logo">
+	</div>
+	<div class="text-center pt-1">
+		<p class="text-lg"> Julia Bodensteiner </p>
+		<p class="text-sm"> Assistant professor (UvA) </p>
+	</div>
+</div>
+
+
+	<div class="flex flex-col justify-items-center mx-auto max-w-prose text-xl py-5 text-gray-800 bg-opacity-70 bg-blue-200 p-5 rounded-xl mb-20">
+		<div class="flex flex-col">
+			<h2 class="pb-4 text-2xl text-left font-semibold uppercase">
+				Springer Thesis
+			</h2>
+			<div class="flex flex-col md:flex-row gap-y-4 gap-x-4">
+				<div class="flex flex-col md:w-10/12">
+					<p class="text-justify pb-2 leading-tight"> In Summer 2022, my PhD thesis was selected to be published as part of the
+						<a href="https://www.youtube.com/watch?v=6xfv-iYYufY&t=1s" class="text-tblue-dark hover:bg-pink-100 rounded-md">'Springer theses'</a>, a
+						book thesis to recognize outstanding PhD research. This monograph, entitled "Observational imprints of binary evolution on B- and Be-star
+						populations" summarizes the main findings of my PhD, in which I used observations,
+						mainly optical spectroscopy, to detect and characterize products of binary interactions.
+					</p>
+					<p class="text-justify pb-2 leading-tight">
+						The Springer thesis can be found <a href="https://link.springer.com/book/10.1007/978-3-031-19489-4" class="text-tblue-dark hover:bg-pink-100 rounded-md">here.</a>
+					</p>
+				</div>
+				<div class="md:w-2/12 flex justify-center md:justify-end pb-5 md:pb-0">
+					<img class="shadow-xl w-auto h-auto my-auto border-2 border-gray-800 rounded-md justify-self-center" src="/assets/css/img/springer.png" alt="Cover of my Springer Thesis.">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-2xl mb-20">
+		<h2 class="pb-4 text-left font-semibold uppercase">
+			Research Interests
+		</h2>
+		<div class="flex flex-col md:flex-row text-xl justify-evenly gap-x-16">
+			<div>
+				<p class="text-justify font-semibold"> Massive stars </p>
+				<p class="text-justify text-lg leading-tight"> are cosmic engines driving the evolution of their entire host galaxies. </p>
+			</div>
+			<div>
+				<p class="text-justify font-semibold"> Stellar evolution </p>
+				<p class="text-justify text-lg leading-tight"> predictions serve as main ingredient for numerous other astrophysical disciplines. </p>
+			</div>
+			<div>
+				<p class="text-justify font-semibold"> Stellar multiplicity </p>
+				<p class="text-justify text-lg leading-tight"> strongly impacts the evolution of all components of a multiple system. </p>
+			</div>
+			<div>
+				<p class="text-justify font-semibold"> Binary interaction products </p>
+				<p class="text-justify text-lg leading-tight"> are direct probes of the outcome and the physics of binary interactions. </p>
+			</div>
+		</div>
+	</div>
+
+	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-20">
+		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
+			Ongoing projects
+		</h2>
+		<div x-data="{ open: false }" class="flex flex-col justify-items-center max-w-prose pb-5">
+			<div class="flex flex-row gap-x-4 justify-between items-center">
+				<h2 class="text-left font-semibold">
+				Investigating the potential binary origin of Be stars
+				</h2>
+				<button class="flex flex-col justify-end" x-show="! open" @click="open = ! open">
+					<p class="text-xs">read more</p>
+					<img class="h-5" src="/assets/css/img/arrow_d.svg" alt="open"/>
+				</button>
+				<button class="flex flex-col justify-end" x-show="open" @click="open = ! open">
+					<p class="text-xs">read less</p>
+					<img class="h-5" src="/assets/css/img/arrow_u.svg" alt="close"/>
+				</button>
+			</div>
+			<div x-show="! open" class="flex flex-col py-4">
+				<p class="text-justify pb-2 leading-tight"> Using high-resolution multi-epoch spectroscopy of > 150 classical Be stars, I want to investigate their multiplicity status. </p>
+			</div>
+			<div x-show="open" class="flex flex-col py-4">
+				<p class="text-justify pb-2 leading-tight"> About 20% of the massive galactic B stars are classical Be stars, observationally classified as such because
+				their B-star spectrum is dominated by strong emission lines. While it has been shown that the formation of a circumstellar decretion disk, in which the
+				emission originates, is linked to fast rotation of the central star, the origin of the rapid rotation remains unclear.</p>
+				<div class="flex flex-col md:flex-row gap-y-4 gap-x-4">
+					<div class="flex flex-col md:w-9/12">
+						<p class="text-justify leading-tight pb-2"> Different channels for the origin of the Be phenomenon have been proposed. One of them is based
+						on binarity, proposing that Be stars are the mass gainers in post-mass-transfer binary systems. Apart from gaining mass, the stars also gained
+						angular momentum, spinning them up to almost critical rotation rates. If the binary channel is the dominating one in the formation of massive
+						Be stars, two clear and testable predictions emerge:
+						<ul class="list-decimal list-outside pl-8 leading-tight">
+							<li> there should be a lack of Be stars in close binary systems with main-sequence (MS) companions </li>
+							<li> Be stars in binaries should have exotic companions such as envelope-stripped Helium stars, neutron stars and black holes </li>
+						</ul>
+						<p class="text-justify pb-2 leading-tight">  In a literature study of a sample of ~300 massive Be stars (with spectral types B1.5 and earlier)
+						in the Milky Way, we found that there is a clear lack of reported Be stars in binary systems with close main-sequence companions. While the sample
+						is inhomogeneous, this gives a first hint that the binary channel might be dominating in the formation of massive Be stars. </p>
+					</div>
+					<div class="md:w-3/12 flex justify-center md:justify-end pb-5 md:pb-0">
+						<img class="shadow-xl w-auto h-auto my-auto border-2 border-gray-800 rounded-md justify-self-center" src="/assets/css/img/schematics_Be.png" alt="Schematic overview of the binary channel for Be star formation">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div x-data="{ open: false }" class="flex flex-col justify-items-center max-w-prose  pb-5">
+			<div class="flex flex-row gap-x-4 justify-between items-center">
+				<h2 class="text-left font-semibold">
+					Hunting for post-interaction systems in the SMC cluster NGC 330
+				</h2>
+				<button class="flex flex-col justify-end" x-show="! open" @click="open = ! open">
+					<p class="text-xs">read more</p>
+					<img class="h-5" src="/assets/css/img/arrow_d.svg" alt="open"/>
+				</button>
+				<button class="flex flex-col justify-end" x-show="open" @click="open = ! open">
+					<p class="text-xs">read less</p>
+					<img class="h-5" src="/assets/css/img/arrow_u.svg" alt="close"/>
+				</button>
+			</div>
+			<div x-show="! open" class="flex flex-col py-4">
+				<p class="text-justify pb-2 leading-tight"> Based on adaptive-optics supported observations with VLT/MUSE I investigate the occurrence and
+				properties of post-interaction binary systems . </p>
+			</div>
+			<div x-show="open" class="flex flex-col py-4">
+				<p class="flex text-justify pb-2 leading-tight"> When the integral field spectrograph MUSE mounted at UT4 of the VLT, Chile was equipped with a
+				state-of-the-art adaptive optics module in summer 2017, it was possible for the first time to resolve the dense core of open stellar clusters in
+				our neighboring galaxies, the Magellanic Clouds, and obtain spectra for its entire massive star population.</p>
+				<p class="text-justify pb-2 leading-tight"> Using MUSE spectroscopy for NGC 330, a young, massive cluster in the Small Magellanic Cloud (SMC),
+				we are able to provide a spectroscopic consensus of the massive star content of NGC 330. </p>
+				<div class="flex flex-col md:flex-row gap-y-4 gap-x-4">
+					<div class="flex md:w-4/12 justify-center md:justify-end pb-5 md:pb-0">
+						<img class="shadow-xl w-auto h-auto my-auto border-2 border-gray-800 rounded-md justify-self-center" src="/assets/css/img/NGC330_rgb.png" alt="RGB imagine of the cluster NGC 330 observed with MUSE">
+					</div>
+					<div class="flex flex-col md:w-8/12">
+						<p class="text-justify pb-2 leading-tight"> We confirm that there is a surprisingly large number of classical Be stars, that is
+						rapidly rotating stars that display characteristics Balmer emission lines arising in a circumstellar decretion disk. Based on their
+						position in the color-magnitude diagram, they are prime candidates for binary interaction products. Using the multi-epoch nature of
+						the MUSE observations, we identify binary systems in the cluster. We find that the current binary fraction in NGC 330 is significantly
+						lower than in young stellar cluster. </p>
+					</div>
+				</div>
+				<p class="text-justify pb-2"> The RGB image shown here is constructed from the MUSE observations of NGC 330.  </p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="flex flex-col bg-white bg-opacity-80 text-gray-800 px-16 py-6 text-2xl mb-20">
+		<h2 class="pb-4 text-left font-semibold uppercase">
+			Awarded Telescope Time
+		</h2>
+		<p> Since 2017 ... </p>
+		<div>
+			<div class="flex flex-row gap-x-4 justify-between items-center">
+	        		<h2 class="text-left font-semibold">
+	            			As a PI
+	        		</h2>
+			</div>
+			
+			<div class="flex flex-col md:flex-row text-xl justify-evenly gap-x-16 py-4">
+
+				<div>
+					<p class="text-justify font-semibold"> VLT </p>
+					<p class="text-justify text-lg leading-tight"> five successful proposal (> 45 hours) using instruments like MUSE and UVES </p>
+				</div>
+				<div>
+					<p class="text-justify font-semibold"> VLTI </p>
+					<p class="text-justify text-lg leading-tight"> one successful monitoring proposal (8 hours) using GRAVITY  </p>
+				</div>
+				<div>
+					<p class="text-justify font-semibold"> MERCATOR </p>
+					<p class="text-justify text-lg leading-tight"> 100 nights with the HERMES spectrograph </p>
+				</div>
+			</div>
+			
+			<div class="flex flex-row gap-x-4 justify-between items-center pt-2">
+				<h2 class="text-left font-semibold">
+	            			As a Co-I
+	        		</h2>
+	        	</div>
+	        	<div class="flex flex-col md:flex-row text-xl justify-evenly gap-x-16 py-4">
+	        		<p class="text-justify text-lg leading-tight"> 
+	        			In 2023, we were awarded over 100 hours for the ESO Large Programme <span class="italic"> Binarity at LOw Metallicity </span> (BLOeM, PI: T. Shenar),
+	        			for which I act as delegate-PI. Using the multiplex capabilities of VLT-FLAMES, we aim to obtain multi-epoch spectroscopy of almost
+	        			1000 massive stars in the Small Magellanic Clouds. 
+	        		</p>
+	        	</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="flex flex-col justify-items-center max-w-prose mx-auto py-5 text-gray-800 text-xl bg-opacity-70 bg-blue-200 p-6 rounded-xl mb-20">
+		<h2 class="pb-4 text-left text-2xl font-semibold uppercase">
+			Observing Experience
+		</h2>
+		<p class="text-justify pb-2 leading-tight">
+			During my career, I got the chance to conduct my own observations as well as service-mode observations for the community myself:
+		</p>
+		<div class="grid grid-cols-1 lg:grid-cols-2 justify-between gap-x-8 pb-2">
+			<div>
+				<p class="text-justify"> <a href="https://www.hq.eso.org/public/teles-instr/paranal-observatory/vlt/" class="text-tblue-dark hover:bg-pink-100 rounded-md">ESO-VLT</a>, Paranal, Chile </p>
+				<ul class="list-disc list-outside pl-8 leading-tight">
+					<li> 10 nights in 2023 (training run on UT1 and UT2) </li>
+				</ul>
+				
+			</div>
+			<div>
+				<img class="shadow-xl w-4/5 h-auto m-auto border-2 border-gray-800 rounded-md justify-self-center" src="/assets/css/img/vlt.png" alt="Julia in front of the Very Large Telescope (VLT).">
+			</div>
+			
+			<div>
+				<p class="text-justify"> <a href="http://www.mercator.iac.es/" class="text-tblue-dark hover:bg-pink-100 rounded-md">Mercator telescope</a>, Spain </p>
+				<ul class="list-disc list-outside pl-8 leading-tight">
+					<li> 10 nights in 2020 (remotely) </li>
+					<li> 20 nights in 2019 </li>
+					<li> 10 nights in 2018 </li>
+				</ul>
+				
+			</div>
+			<div class="mb-4">
+				<p class="text-justify"> <a href="https://www.eso.org/public/teles-instr/lasilla/mpg22/" class="text-tblue-dark hover:bg-pink-100 rounded-md">MPG/ESO 2.2m-telescope</a>, Chile </p>
+				<ul class="list-disc list-outside pl-8 leading-tight">
+					<li> 11 nights in 2016 </li>
+					<li> 10 nights in 2015 </li>
+				</ul>
+			</div>
+			<div class="w-4"></div>
+		</div>
+		<p class="text-justify pb-4 leading-tight">
+			I have vast experience working with high-resolution spectra
+			as well as with integral-field spectroscopy.
+			This was one of the reasons why I chose to work on
+			<a href="https://www.hq.eso.org/sci/facilities/develop/instruments/SoXS.html" class="text-tblue-dark hover:bg-pink-100 rounded-md">SoXS</a>, a new state-of-the-art spectrograph for the ESO-NTT, as my ESO duty work.
+		</p>
+	</div>
+
+</main>
+
+<footer class="h-14 md:h-8 text-xs bg-gray-800 bg-opacity-80 w-full grid grid-cols-1 grid-rows:3 md:grid-cols-3 md:grid-rows:1 justify-between text-white p-2">
+	<div class="text-left"> 2022 </div>
+	<div class="text-left md:text-center"> © Julia Bodensteiner </div>
+	<div class="text-left md:text-right"> Background: José Francisco Salgado(josefrancisco.org)/ESO </div>
+</footer>
+
+
+</body>
+
+</html>

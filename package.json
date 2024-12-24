@@ -1,0 +1,26 @@
+{
+  "name": "test_webpage",
+  "version": "1.0.0",
+  "description": "test for my webpage",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwind build -i ./node_modules/tailwindcss/tailwind.css -o ./assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbodenst/test_webpage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbodenst/test_webpage/issues"
+  },
+  "homepage": "https://github.com/jbodenst/test_webpage#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}
